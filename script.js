@@ -7,6 +7,7 @@ const cartItems = new Map(); // uma estrutura de dados para armazenar uma chave 
 for (const fruit of fruits) {
   //pega cada fruta da lista de frutas
   const fruitCardDiv = document.createElement("div"); // cria uma div nova
+  fruitCardDiv.className = 'fruit-card';
   //dentro do HTML retorna propriedades de cada objeto
   fruitCardDiv.innerHTML = ` 
     <p>${fruit.emoji}</p>
@@ -17,6 +18,7 @@ for (const fruit of fruits) {
     fruit.emoji
   }" data-price="${fruit.price}">Adicionar ao carrinho</button>
   `;
+
   tableFruitsDiv.appendChild(fruitCardDiv); //a div de cada objeto fruta deve estar dentro da div tabela de frutas (filho e pai)
 }
 // seleciona todos botões com a class .btn-add-cart e coloca dentro de uma lista
