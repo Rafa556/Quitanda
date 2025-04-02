@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-add-cart {
+  pointer-events: auto;
+}
+
+#container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #dffeff;
+  padding: 20px;
+}
+
+#cart-div {
+  border: 2px #00940c solid;
+  padding: 1rem;
+  display: flex;
+  background-color: #fff785;
+  color: #000852;
+  border-radius: 10% 10% 10% 10%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  grid-template-columns: 200px;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 200px 200px 200px;
+}
+
+.card-cereja {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.card-emoji {
+  padding: 1rem;
+}
+
+.fruit-card {
+  border: 1px rgb(109, 109, 109) solid;
+  display: flex;
+  background-color: #ddffd0;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  font-family: cursive, sans-serif;
+  border-radius: 50% 50% 10% 10%;
+  font-size: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+.fruit-card:hover {
+  transform: translateY(-5px);
+}
+
+.btn-remove {
+  width: 7em;
+  height: 4ex;
+  background-color: #ff5c5c;
+  border: 2px solid rgb(255, 221, 157);
+  border-radius: 10px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-remove:hover {
+  background-color: #ffbfbf;
+  transform: scale(1.05);
+  color: rgb(0, 0, 0);
+}
+
+.btn-add-cart {
+  width: 10em;
+  height: 40px;
+  background-color: #f2ff7f;
+  border: 2px solid rgb(245, 83, 83);
+  border-radius: 10px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+.btn-add-cart:hover {
+  background-color: #fbffbf;
+  transform: scale(1.05);
+}
+
+#cart-Span {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #00940c;
+}

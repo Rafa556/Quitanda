@@ -3,44 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Quitandinha do Rafinha</title>
     <script src="script.js" type="module"></script>
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-
-      #container {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .wrapper {
-        display: grid;
-        gap: 8px;
-        grid-template-columns: 200px 200px 200px;
-      }
-
-      .fruit-card {
-        border: 1px rgb(109, 109, 109) solid;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-        border-radius: 15px;
-      }
-    </style>
   </head>
   <body>
     <div id="container">
       <div id="table-fruits" class="wrapper"></div>
-      <div id="cart-div">Carrinho (<span id="cart-Span">0</span>)</div>
+      <div id="cart-div">Carrinho<span id="cart-Span">(0)</span></div>
     </div>
-    
   </body>
 </html>
